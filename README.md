@@ -6,6 +6,42 @@ Questo progetto implementa un sistema di gestione automatica dei ticket di suppo
 
 ---
 
+## Features
+
+- AI Agent sviluppato con n8n
+- Retrieval-Augmented Generation (RAG)
+- OpenAI Chat Model
+- OpenAI Embeddings
+- Simple Vector Store
+- Docker
+- JSON Dataset
+- Automatic Ticket Routing
+
+---
+
+## Workflow
+
+Di seguito è mostrato il workflow principale implementato in n8n.
+
+![Workflow n8n](images/workflow.png)
+
+### Workflow Overview
+
+Il workflow esegue le seguenti operazioni:
+
+1. Carica i ticket (`tickets.json`).
+2. Carica i dati dei clienti (`clients.json`).
+3. Unisce le informazioni tramite il nodo Merge.
+4. Interroga l'AI Agent.
+5. Consulta la knowledge base tramite il Simple Vector Store (RAG).
+6. Genera la risposta.
+7. Classifica il ticket tramite il nodo Switch:
+   - Auto Reply
+   - Dispatch
+   - Pending Reply
+
+---
+
 ## Struttura del progetto
 
 AIAgentProject/
