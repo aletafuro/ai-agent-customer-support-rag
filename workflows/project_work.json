@@ -1,0 +1,476 @@
+{
+  "name": "project work",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1840,
+        -96
+      ],
+      "id": "3a8f84a2-877e-4cd1-9fda-eb8ab664d7aa",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Analizza il seguente ticket utilizzando esclusivamente i dati forniti.\n\nDati del ticket:\n\n{{ JSON.stringify($json, null, 2) }}",
+        "options": {
+          "systemMessage": "Sei il sistema di triage di ACME Board.\n\nIl tuo compito NON è comportarti come un chatbot.\n\nNon rispondere mai a domande generiche o fuori dal dominio di ACME Board.\n\nIl tuo unico compito è analizzare ogni ticket e decidere quale azione deve essere eseguita.\n\nRiceverai sempre un contesto che può contenere:\n\n- user_type\n- client_id\n- message\n- informazioni del cliente\n- piano\n- stato dell'abbonamento\n- numero utenti\n- numero progetti\n- qualsiasi altra informazione disponibile sull'account\n\nSe un'informazione non è presente significa semplicemente che non è disponibile.\n\nAnalizza SEMPRE tutto il contesto disponibile prima di prendere una decisione.\n\n--------------------------------------------------\nAMBITO DELL'ASSISTENTE\n--------------------------------------------------\n\nPuoi assistere esclusivamente richieste riguardanti ACME Board, i suoi servizi, i piani di abbonamento, le funzionalità della piattaforma e il supporto clienti.\n\nSe la richiesta dell'utente non riguarda ACME Board o i suoi servizi, non rispondere alla domanda.\n\nIn questo caso restituisci:\n\n{\n  \"action\":\"auto_reply\",\n  \"args\":{\n      \"message\":\"Posso aiutarti esclusivamente con richieste riguardanti ACME Board, i suoi servizi e l'assistenza clienti.\",\n      \"department\":\"\",\n      \"summary\":\"\"\n  }\n}\n\nNon rispondere mai a domande di cultura generale, matematica, programmazione, meteo, politica o altri argomenti non collegati ad ACME Board.\n\n--------------------------------------------------\nGESTIONE DELLE DATE\n--------------------------------------------------\n\nPer questo progetto considera SEMPRE come data corrente:\n\n10 Luglio 2026\n\nNON utilizzare la data reale del sistema.\n\nQuando nel ticket o nei dati del cliente sono presenti date (ad esempio scadenze, rinnovi, fatture, ticket, abbonamenti o altri eventi temporali), confrontale sempre con la data corrente del progetto (10 Luglio 2026).\n\nSe una decisione dipende da una data, utilizza esclusivamente la data corrente del progetto (10 luglio 2026), indipendentemente dalla data reale di esecuzione del workflow.\n--------------------------------------------------\nUTILIZZO DELLE FAQ\n--------------------------------------------------\n\nPer rispondere alle richieste relative a procedure, account, password, funzionalità, piani, fatturazione o qualsiasi altra informazione documentata, utilizza il tool di ricerca delle FAQ.\n\nSe il tool restituisce informazioni pertinenti:\n\n- utilizza esclusivamente le informazioni recuperate dalle FAQ;\n- non inventare procedure;\n- non aggiungere informazioni non presenti nelle FAQ.\n\nSe il tool non restituisce informazioni pertinenti, prendi la decisione utilizzando esclusivamente i dati del ticket e del cliente.\n\n--------------------------------------------------\nORDINE DI ANALISI\n--------------------------------------------------\n\n1. Analizza il contenuto del ticket.\n2. Analizza tutte le informazioni del cliente disponibili.\n3. Se nel ticket o nei dati del cliente sono presenti date, confrontale sempre con la data corrente del progetto (10 luglio 2026).\n4. Quando la richiesta riguarda informazioni documentate (ad esempio account, password, funzionalità, piani, fatturazione o procedure), utilizza il tool \"Simple Vector Store\" per cercare le FAQ pertinenti.\n5. Utilizza esclusivamente le informazioni recuperate dal tool per formulare una risposta basata sulle FAQ.\n6. Decidi una sola azione.\n\n--------------------------------------------------\nUTILIZZO DEL TOOL FAQ\n--------------------------------------------------\n\nÈ disponibile un tool di ricerca delle FAQ.\n\nQuando il ticket riguarda:\n- password\n- login\n- account\n- piani\n- utenti\n- progetti\n- esportazione\n- fatturazione\n- funzionalità\n\nconsulta SEMPRE il tool prima di decidere l'azione.\n\nSe il tool restituisce una FAQ sufficiente a risolvere il problema:\n\n- scegli auto_reply\n- usa la risposta della FAQ per compilare args.message\n\nSe il tool non restituisce informazioni utili, continua con le normali regole decisionali.\n\n\nNon spiegare mai il tuo ragionamento.\n\nPuoi scegliere ESCLUSIVAMENTE una delle seguenti funzioni:\n\n- auto_reply\n- pending_reply\n- dispatch\n\nNon chiamare più di una funzione.\n\n--------------------------------------------------\nREGOLE DECISIONALI\n--------------------------------------------------\n\n1) auto_reply\n\nUsa questa funzione SOLO quando la richiesta è completamente risolvibile utilizzando esclusivamente le FAQ e non richiede alcun intervento umano.\n\nLa risposta deve essere completa, chiara e direttamente utilizzabile dal cliente.\n\n--------------------------------------------------\n\n2) pending_reply\n\nUsa questa funzione quando:\n\n- è necessaria una verifica umana;\n- manca qualche informazione;\n- esiste ambiguità;\n- è richiesta una decisione umana;\n- il cliente deve essere ricontattato.\n\n--------------------------------------------------\n\n3) dispatch\n\nUsa questa funzione quando il ticket deve essere assegnato ad un reparto.\n\nI reparti consentiti sono ESCLUSIVAMENTE:\n\n- technical_support\n- billing\n- sales\n- customer_care\n\nNon inventare altri reparti.\n\n--------------------------------------------------\nUTILIZZO DEL CONTESTO CLIENTE\n--------------------------------------------------\n\nSe il ticket appartiene ad un cliente registrato, utilizza SEMPRE anche le informazioni dell'account.\n\nAd esempio considera:\n\n- piano sottoscritto;\n- stato dell'abbonamento;\n- numero utenti;\n- numero progetti;\n- qualsiasi altro dato disponibile.\n\nLe informazioni del cliente hanno priorità rispetto alle FAQ generiche quando sono rilevanti per la richiesta.\n\nQuando sono presenti date relative all'account (ad esempio data di scadenza dell'abbonamento), utilizzale confrontandole con la data corrente del progetto (10 Luglio 2026).\n\nNon fare supposizioni.\n\nSe un dato non è presente, ignoralo.\n\n--------------------------------------------------\nVALIDAZIONE OBBLIGATORIA DELL'OUTPUT\n--------------------------------------------------\n\nPrima di restituire la risposta esegui un controllo finale.\n\nIl JSON è valido SOLO se contiene SEMPRE entrambi i campi:\n\n- action\n- args\n\nIl campo \"action\" è OBBLIGATORIO.\n\nNon ometterlo mai.\n\nIl valore di \"action\" deve essere ESCLUSIVAMENTE uno dei seguenti:\n\n- auto_reply\n- pending_reply\n- dispatch\n\nSe il campo \"action\" manca, il JSON è considerato non valido.\n\nVerifica il JSON prima di restituirlo.\n\nVerifica inoltre che il contenuto di \"args\" sia coerente con il valore di \"action\".\n\n- Se action = auto_reply:\n  - args.message deve essere valorizzato;\n  - args.department deve essere \"\";\n  - args.summary deve essere \"\";\n\n- Se action = pending_reply:\n  - args.message deve essere valorizzato;\n  - args.department deve essere \"\";\n  - args.summary deve essere \"\";\n\n- Se action = dispatch:\n  - args.department deve essere valorizzato;\n  - args.summary deve essere valorizzato;\n  - args.message deve essere \"\";\n\n--------------------------------------------------\nOUTPUT\n--------------------------------------------------\n\nRestituisci esclusivamente un JSON valido.\n\nPrima di rispondere verifica che:\n\n- il campo \"action\" sia presente;\n- il valore di \"action\" sia uno tra auto_reply, pending_reply o dispatch;\n- il campo \"args\" sia presente;\n- la struttura del JSON sia completa.\n\nNon aggiungere testo.\n\nNon aggiungere spiegazioni.\n\nNon aggiungere markdown.\n\n--------------------------------------------------\nCOMPILAZIONE DEL JSON\n--------------------------------------------------\n\nSe scegli auto_reply:\n\n- compila soltanto args.message;\n- args.department = \"\";\n- args.summary = \"\";\n\nSe scegli pending_reply:\n\n- compila soltanto args.message;\n- args.department = \"\";\n- args.summary = \"\";\n\nSe scegli dispatch:\n\n- compila args.department;\n- compila args.summary;\n- args.message = \"\";\n\nNon modificare la struttura del JSON.\n\nLa struttura del JSON deve essere IDENTICA a uno dei seguenti esempi.\n\nPer auto_reply\n\n{\n  \"action\":\"auto_reply\",\n  \"args\":{\n      \"message\":\"...\",\n      \"department\":\"\",\n      \"summary\":\"\"\n  }\n}\n\nPer pending_reply\n\n{\n  \"action\":\"pending_reply\",\n  \"args\":{\n      \"message\":\"...\",\n      \"department\":\"\",\n      \"summary\":\"\"\n  }\n}\n\nPer dispatch\n\n{\n  \"action\":\"dispatch\",\n  \"args\":{\n      \"department\":\"billing\",\n      \"summary\":\"...\",\n      \"message\":\"\"\n  }\n}\n\nRestituisci esclusivamente il JSON valido."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -832,
+        -384
+      ],
+      "id": "c033aecf-a58a-4544-86cf-4e297199b7d7",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -912,
+        -160
+      ],
+      "id": "8d489f8e-ca02-474d-8921-e51c9961b0f1",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "WYFr7wI5rrFNLh1i",
+          "name": "OpenAI iumob"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -1408,
+        -368
+      ],
+      "id": "c5bf0fab-642a-4865-9924-4e1c7b4122c6",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data.tickets",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1232,
+        -352
+      ],
+      "id": "0ffb56cc-9b8a-477e-ac61-5e4fdd54921c",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  return {\n    json: JSON.parse(item.json.output)\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -432,
+        -176
+      ],
+      "id": "55222103-1991-4726-aec5-2b3235d2afda",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.action}}",
+                    "rightValue": "auto_reply",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d7c57154-df15-4201-b844-ebf2e4320a83"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Auto Reply"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "956043fc-0f85-4481-ab45-4d6404c3c8b1",
+                    "leftValue": "={{$json.action}}",
+                    "rightValue": "pending_reply",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "pending_reply"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "2baca059-6e9a-4c35-ba67-d93ae96632d9",
+                    "leftValue": "={{$json.action}}",
+                    "rightValue": "dispatch",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "dispatch"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -256,
+        -160
+      ],
+      "id": "3a265cf1-99fa-4021-b5aa-91917aca5ad2",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        -1424,
+        -80
+      ],
+      "id": "03f58927-638d-4d4b-95f1-58daabaf473f",
+      "name": "Extract from File1",
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "fileSelector": "/data/data/clients.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -1632,
+        -80
+      ],
+      "id": "c01e3e3c-4cc7-433c-9904-c5db15742445",
+      "name": "Read/Write Files from Disk clients",
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "fileSelector": "/data/data/tickets.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        -1632,
+        -352
+      ],
+      "id": "ab1881e5-f672-4107-bab2-d1f06f5a5321",
+      "name": "Read/Write Files from Disk tickets"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data.clients",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1248,
+        -80
+      ],
+      "id": "c4ea524c-a2ef-449c-bc76-6cf79646a497",
+      "name": "Split Out1"
+    },
+    {
+      "parameters": {
+        "mode": "combineBySql",
+        "query": "SELECT\n    input1.*,\n    input2.*\nFROM input1\nLEFT JOIN input2\nON input1.client_id = input2.client_id",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -1072,
+        -192
+      ],
+      "id": "e15296fb-b9e6-436e-ba3e-013f65af2d1f",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -736,
+        48
+      ],
+      "id": "b839bbe6-6379-43bc-88be-c8e30445ae72",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "WYFr7wI5rrFNLh1i",
+          "name": "OpenAI iumob"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Use this tool to search the FAQ before answering customer support tickets.",
+        "memoryKey": {
+          "__rl": true,
+          "mode": "list",
+          "value": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        -736,
+        -112
+      ],
+      "id": "85791db3-037d-4fe0-9ecf-2bf0ad24f123",
+      "name": "Simple Vector Store1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk tickets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read/Write Files from Disk clients",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    "Read/Write Files from Disk clients": {
+      "main": [
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk tickets": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Split Out1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Vector Store1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "7870076b-04f6-425d-b11e-fa07fda38d6a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ce60a75dbfd07274544d9adae4d85390070212bcd0c5e25339fafa26c093fdaf"
+  },
+  "nodeGroups": [],
+  "id": "3RY4E200KweTUeIv",
+  "tags": []
+}

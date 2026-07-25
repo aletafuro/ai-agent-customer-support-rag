@@ -1,0 +1,82 @@
+[
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente: Conti & Partners (ID: 2b8d70f6). Referente: Davide Conti, email davide.conti@contipartners.it. Piano: Pro, stato abbonamento: attivo, scadenza rinnovo: 03/10/2026. Utenti: 4, Progetti attuali: 9. Segnalazione: l'app si blocca (crash) quando si apre la vista calendario di un progetto di grandi dimensioni. Il cliente ha già provato a reinstallare l'app ma il problema persiste. Richiesta: indagare il crash, riprodurre il problema su progetto di grandi dimensioni, verificare log e possibili limiti/bug legati alla vista calendario e fornire indicazioni/patch.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "billing",
+      "summary": "Richiesta da guest: prima di sottoscrivere un abbonamento chiede se ACME Board emette fattura, quali metodi di pagamento sono accettati e a chi rivolgersi. Nessun client_id o dati account forniti.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "sales",
+      "summary": "Richiesta contatto commerciale per offerta su misura. Mittente: user_type=guest; rappresenta azienda ~200 dipendenti; richiede proposta personalizzata e informazioni sulle condizioni per un grande team; non ci sono dati account aggiuntivi.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente Rossi Costruzioni S.r.l. (client_id: a3f5c81b). Referente: Marco Rossi - marco.rossi@rossicostruzioni.it. Piano: Business. Stato abbonamento: attivo (scadenza rinnovo: 2026-11-30). Utenti attuali: 23; Progetti attuali: 41. Segnalazione: da questa mattina non riescono ad aprire le board, compare sempre un messaggio di errore. Nessun dettaglio tecnico, screenshot o testo dell'errore fornito dal cliente. Richiesta: verificare l'anomalia, valutare impatto e ripristino, e contattare il cliente per eventuali log/screenshot e aggiornamenti.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente Enterprise (client_id: 6a0e2f4d, Greco Energia S.p.A., referente: Federica Greco, email: f.greco@grecoenergia.it). Piano: Enterprise, abbonamento attivo (rinnovo 08/03/2027), utenti attuali: 205, progetti attuali: 312. Segnala: \"quando provo a caricare un allegato il caricamento si blocca e non succede più nulla\". Richiesta: indagare sul problema di upload allegati (verificare log server, limiti di dimensione, permessi utente, errori lato client/timeout) e contattare il referente con istruzioni e risoluzione.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente Enterprise (client_id: d0472f8a, Galli Impianti S.p.A., referente: Roberto Galli, email: r.galli@galliimpianti.it). Abbonamento attivo (scadenza rinnovo: 20/01/2027). Utenti attuali: 87. Progetti attuali: 178. Segnalazione: “L'app si chiude improvvisamente ogni volta che apro uno dei miei progetti più grandi.” Richiesta: indagare il crash e verificare se si tratta di problema di performance legato a progetti di grandi dimensioni o bug specifico. Azioni richieste al team tecnico: 1) controllare i log server e crash reports relativi al client; 2) tentare riproduzione del problema su web e app (iOS/Android); 3) verificare limiti o regressioni recenti; 4) preparare elenco di informazioni aggiuntive da richiedere al cliente (ID progetto, piattaforma e versione app, versione OS, eventuali screenshot o log), e contattare il referente per raccolta dati e follow-up. Priorità: alta (cliente Enterprise, impatto su utilizzo).",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente Conti & Partners (ID 2b8d70f6, referente Davide Conti, email davide.conti@contipartners.it) segnala che da qualche giorno la pagina dei report impiega moltissimo tempo ad aprirsi e a volte rimane completamente bianca. Piano: Pro; stato abbonamento: attivo (scadenza rinnovo 03/10/2026). Utenti attuali: 4; progetti attuali: 9. Nessuna azione preliminare segnalata dal cliente. Richiesta: investigare le cause (performance lato server, errori JS client, timeout, carico risorse, eventuali deploy recenti), riprodurre il problema e contattare il cliente con i prossimi passi.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "technical_support",
+      "summary": "Cliente Moretti Editoria (ID 5e13ba9c, referente Sara Moretti, email s.moretti@morettieditoria.com) su piano Free (account attivo) segnala di aver eliminato per errore un'attività importante e chiede se è possibile recuperarla. Dati account: 1 utente, 2 progetti. Nessuna FAQ trovata relativa al ripristino attività. Si richiede verifica tecnico: controllare cestino/soft-delete/backup, possibilità di ripristino e tempistiche. Ticket ricevuto in data progetto 10 Luglio 2026.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "billing",
+      "summary": "Cliente Enterprise b1c6f307 - Verdi Logistica S.p.A. (referente: Giuseppe Verdi, g.verdi@verdilogistica.it). Richiesta: modificare il metodo di pagamento associato all'abbonamento. Dati account: piano Enterprise, stato abbonamento: attivo, scadenza rinnovo: 15/02/2027, utenti: 140, progetti: 260. Contattare il cliente per assistere nell'aggiornamento del metodo di pagamento o fornire procedura specifica per account Enterprise.",
+      "message": ""
+    }
+  },
+  {
+    "action": "dispatch",
+    "args": {
+      "department": "sales",
+      "summary": "Utente guest (nessun client_id o informazioni account fornite) richiede contatto con un consulente per valutare quale piano è più adatto alla sua piccola azienda. Procedere con contatto commerciale per consulenza piani.",
+      "message": ""
+    }
+  }
+]

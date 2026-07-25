@@ -1,0 +1,354 @@
+[
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Dalla pagina di login clicca su \"Password dimenticata?\", inserisci l'email dell'account e segui il link che ricevi per email per impostare una nuova password. Il link è valido per 24 ore.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "ACME Board è accessibile da browser web e tramite le app per iOS e Android. I dati sono sincronizzati in tempo reale su tutti i dispositivi collegati allo stesso account.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Con il piano Free puoi gestire fino a 3 progetti attivi. Per riferimento, i limiti dei piani sono: Free fino a 3 progetti, Pro fino a 20, Business fino a 100, Enterprise senza limite.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buonasera Laura, il vostro abbonamento è attualmente attivo e scade il 22 luglio 2026, tra 12 giorni. \"Attivo\" significa che il pagamento è in regola e tutte le funzionalità del piano sono disponibili. Per gestire il rinnovo o disdire l'abbonamento vai in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico. Nota: se il pagamento non viene registrato dopo la scadenza, esiste un periodo di tolleranza di una settimana durante il quale l'account resta pienamente utilizzabile; trascorsa più di una settimana senza pagamento l'account viene sospeso.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Salve Anna, dalla documentazione risulta che il piano Pro consente fino a 10 utenti e nel vostro account sono già presenti 10 utenti: per questo motivo non è possibile invitare nuovi membri finché non viene liberato un posto o non effettuate un upgrade di piano. Inoltre lo stato dell'abbonamento è “periodo di tolleranza” (grace period): la data di rinnovo indicata è 05/07/2026 e, considerando la data corrente del progetto (10/07/2026), siete ancora nel periodo di tolleranza di una settimana e l’account è pienamente utilizzabile. Per invitare nuovi membri (se avete posti liberi) seguite: Impostazioni > Team > Inviti. Opzioni per procedere: rimuovere utenti esistenti oppure effettuare l’upgrade a Business (fino a 50 utenti) o Enterprise (senza limite).",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Dalle nostre FAQ: L'abbonamento può trovarsi in tre stati. \"Attivo\": il pagamento è in regola e tutte le funzionalità del piano sono disponibili. \"Periodo di tolleranza\" (Grace): la data di rinnovo è passata ma il pagamento non è ancora stato registrato; l'account resta pienamente utilizzabile per una settimana, durante la quale è possibile regolarizzare il rinnovo. \"Sospeso\": è trascorsa più di una settimana dalla scadenza senza che il pagamento sia stato registrato e l'accesso alle funzionalità è bloccato fino alla regolarizzazione. Puoi gestire il rinnovo in Impostazioni > Abbonamento.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Apri il progetto, vai su Opzioni > Esporta e scegli il formato (CSV o PDF). L'esportazione include task, scadenze e responsabili del progetto selezionato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Apri il progetto, vai su Opzioni > Esporta e scegli il formato (CSV o PDF). L'esportazione include task, scadenze e responsabili del progetto selezionato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buongiorno Marco,\n\nGrazie per il contatto. Di seguito le informazioni disponibili riguardo al passaggio a Enterprise:\n\n- Come cambiare piano: Vai in Impostazioni > Abbonamento > Cambia piano. Il cambio ha effetto immediato sulle funzionalità disponibili.\n- Prezzi (per utente al mese): Free 0€, Pro 12€, Business 29€, Enterprise su richiesta (contattaci per un preventivo personalizzato).\n- Limiti dei piani: Business fino a 50 utenti e fino a 100 progetti; Enterprise senza limite.\n- Risparmio con fatturazione annuale: scegliendo l’abbonamento annuale paghi 10 mensilità invece di 12 (2 mesi gratis all’anno).\n\nPer ricevere un preventivo personalizzato e parlare con un nostro referente per l’offerta Enterprise, contattaci e richiedi un preventivo Enterprise. ",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Ciao Andrea — con il piano Pro puoi avere fino a 20 progetti attivi. Attualmente ne avete 14, quindi potete crearne ancora 6 prima di raggiungere il limite.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buonasera. Sì: scegliendo l'abbonamento annuale si risparmia rispetto al pagamento mensile. L'abbonamento annuale prevede il pagamento di 10 mensilità anziché 12, quindi ottieni 2 mesi gratis all'anno. Per riferimento, i prezzi per utente al mese riportati sono: Free 0€, Pro 12€, Business 29€ (Enterprise su richiesta). Esempi di risparmio per utente su base annua: Pro: 12€ × 12 = 144€ (mensile) → annuale 12€ × 10 = 120€ → risparmio 24€; Business: 29€ × 12 = 348€ → annuale 29€ × 10 = 290€ → risparmio 58€. Se desideri ulteriori dettagli o un preventivo per più utenti, faccelo sapere.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Puoi passare al piano Pro direttamente dalle impostazioni del tuo account. Vai in Impostazioni > Abbonamento > Cambia piano e seleziona il piano Pro: il cambio ha effetto immediato sulle funzionalità disponibili. Il costo è di 12€ per utente al mese; in alternativa puoi scegliere l'abbonamento annuale (paghi 10 mensilità invece di 12). Nota: il piano Free permette fino a 1 utente e 3 progetti, mentre il piano Pro supporta fino a 10 utenti e 20 progetti. Le integrazioni avanzate sono disponibili dal piano Pro in su.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Sì. ACME Board offre un piano Free (0€) che puoi usare senza costi: il piano Free permette fino a 1 utente e fino a 3 progetti. ACME Board è accessibile da browser e tramite le app per iOS e Android. Se poi vuoi funzionalità aggiuntive, i prezzi per utente al mese sono: Pro 12€, Business 29€, Enterprise su richiesta.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Ciao Elena,\n\nIl numero massimo di utenti dipende dal piano: Free fino a 1 utente, Pro fino a 10, Business fino a 50, Enterprise senza limite.\n\nAttualmente il vostro account ha 18 utenti, quindi il piano Business (limite 50 utenti) è sufficiente per le vostre esigenze attuali.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Sì. Scegliendo l'abbonamento annuale paghi 10 mensilità anziché 12, quindi ottieni 2 mesi gratis all'anno.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Ciao Sara,\n\nPer invitare un nuovo membro vai in Impostazioni > Team > Inviti, inserisci l'email della persona e assegnale un ruolo: riceverà un'email con il link per unirsi allo spazio di lavoro. Nota importante: il numero massimo di utenti dipende dal piano. Sul piano Free è consentito fino a 1 utente; Pro fino a 10 utenti; Business fino a 50 utenti; Enterprise senza limite. Poiché il vostro account è su piano Free e avete già 1 utente, non è possibile aggiungerne altri finché non passate a un piano superiore.\n\nSe vuoi procedere con l'upgrade per aggiungere collaboratori, faccelo sapere.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buongiorno Andrea, con il piano Pro il numero massimo di progetti attivi è 20. Avete attualmente 14 progetti; potete quindi crearne ancora 6 prima di raggiungere il limite.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Sì. Puoi esportare i dati di un progetto: apri il progetto, vai su Opzioni > Esporta e scegli il formato (CSV o PDF). L'esportazione include task, scadenze e responsabili del progetto selezionato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Puoi gestire il rinnovo in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico.\n\nInformazioni sugli stati dell'abbonamento:\n- \"Attivo\": il pagamento è in regola e tutte le funzionalità del piano sono disponibili.\n- \"Periodo di tolleranza\" (Grace): la data di rinnovo è passata ma il pagamento non è ancora stato registrato; l'account resta pienamente utilizzabile per una settimana, durante la quale è possibile regolarizzare il rinnovo.\n- \"Sospeso\": è trascorsa più di una settimana dalla scadenza senza che il pagamento sia stato registrato e l'accesso alle funzionalità è bloccato fino alla regolarizzazione.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il \"periodo di tolleranza\" (Grace) significa che la data di rinnovo è passata ma il pagamento non è ancora stato registrato. L'account resta pienamente utilizzabile per una settimana, durante la quale è possibile regolarizzare il rinnovo. Se trascorre più di una settimana dalla scadenza senza che il pagamento sia stato registrato, lo stato diventa \"Sospeso\" e l'accesso alle funzionalità è bloccato fino alla regolarizzazione. Lo stato \"Attivo\" indica che il pagamento è in regola e tutte le funzionalità del piano sono disponibili.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Con il piano Free puoi creare fino a 3 board (progetti). Se hai bisogno di più board puoi cambiare piano: vai in Impostazioni > Abbonamento > Cambia piano e seleziona il nuovo piano; il cambio ha effetto immediato sulle funzionalità disponibili.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Puoi modificare le notifiche da Impostazioni > Notifiche: scegli per quali eventi ricevere un avviso (nuove assegnazioni, scadenze in arrivo, menzioni, commenti). Puoi riceverle nell'app e via email. Se non ricevi le notifiche via email pur avendole attivate, potrebbe essere un problema tecnico di recapito: in tal caso segnala il problema al Supporto Tecnico.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Apri il progetto, vai su Opzioni > Esporta e scegli il formato (CSV o PDF). L'esportazione include task, scadenze e responsabili del progetto selezionato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Per cambiare il piano di abbonamento vai in Impostazioni > Abbonamento > Cambia piano e seleziona il nuovo piano. Il cambio ha effetto immediato sulle funzionalità disponibili.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Salve Anna,\n\nDal controllo del vostro account risulta che avete un piano Pro con 10 utenti attuali. Dalle FAQ: il piano Pro consente fino a 10 utenti, quindi non è possibile aggiungerne altri finché non viene liberato uno slot o non viene effettuato un upgrade di piano.\n\nIl vostro abbonamento è in periodo di tolleranza (scadenza rinnovo 05/07/2026). Oggi è 10/07/2026, quindi siete ancora nel periodo di tolleranza (la piena funzionalità è garantita per una settimana dalla data di rinnovo). Se il pagamento non viene registrato entro 7 giorni dalla scadenza (entro il 12/07/2026) l'account verrà sospeso.\n\nAzioni possibili:\n- Rimuovere un utente non più necessario.\n- Effettuare l'upgrade di piano (per es. a Business, che permette fino a 50 utenti) tramite Impostazioni > Abbonamento > Cambia piano (il cambio ha effetto immediato).\n- Invitare nuovi membri tramite Impostazioni > Team > Inviti dopo aver liberato uno slot o aver effettuato l'upgrade.\n\nSe desiderate, possiamo fornirvi istruzioni passo dopo passo per l'upgrade o per gestire gli inviti.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Ciao — Sì. ACME Board può essere utilizzato da un team di 3 persone. Limiti utenti per piano: Free fino a 1 utente, Pro fino a 10 utenti, Business fino a 50 utenti, Enterprise senza limite. Prezzi per utente al mese: Free 0€, Pro 12€, Business 29€, Enterprise su richiesta. Limiti progetti: Free fino a 3 progetti, Pro fino a 20, Business fino a 100, Enterprise senza limite. Per invitare nuovi membri vai in Impostazioni > Team > Inviti e inserisci l'email della persona da invitare. Per cambiare piano: Impostazioni > Abbonamento > Cambia piano.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buonasera Franco, dal controllo dell'account risulta che lo stato dell'abbonamento è \"sospeso\" (data di rinnovo: 30/06/2026). Secondo la documentazione: se è trascorsa più di una settimana dalla scadenza senza registrazione del pagamento, l'accesso alle funzionalità è bloccato fino a quando il rinnovo non viene regolarizzato. Oggi è 10/07/2026, quindi è passato più di una settimana dalla scadenza. Per riottenere l'accesso, regolarizzi il rinnovo effettuando il pagamento o aggiornando i dati di fatturazione: può gestire il rinnovo in Impostazioni > Abbonamento. Una volta registrato il pagamento l'accesso verrà riattivato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Puoi gestire il rinnovo in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il piano gratuito (Free) non ha scadenza: gli account con piano Free restano sempre attivi.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buonasera Andrea, con il piano Pro il numero massimo di progetti attivi è 20. Avendo attualmente 14 progetti, potete crearne ancora 6 prima di raggiungere il limite.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Sì. È disponibile il pagamento annuale. Scegliendo l'abbonamento annuale invece di quello mensile paghi 10 mensilità anziché 12 (2 mesi gratis all'anno). Prezzi per utente al mese: Free 0€, Pro 12€, Business 29€, Enterprise su richiesta.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Ciao Elena, per le notifiche email vai in Impostazioni > Notifiche e verifica che per l'evento “nuove assegnazioni” sia attivata la ricezione via email. Puoi scegliere di riceverle nell'app e via email. Se le notifiche via email sono attivate ma continui a non riceverle, potrebbe trattarsi di un problema tecnico di recapito: in tal caso segnala il problema al Supporto Tecnico.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buongiorno Marco Rossi,\n\nAttualmente siete sul piano Business. Di seguito le informazioni sulle opzioni disponibili secondo la nostra documentazione:\n\n- Prezzi (per utente, al mese): Free 0€, Pro 12€, Business 29€, Enterprise su richiesta (contattaci per un preventivo personalizzato).\n- Limiti per piano: Free 1 utente / 3 progetti; Pro fino a 10 utenti / 20 progetti; Business fino a 50 utenti / 100 progetti; Enterprise senza limite.\n- Come cambiare piano: vai in Impostazioni > Abbonamento > Cambia piano e seleziona il nuovo piano. Il cambio ha effetto immediato sulle funzionalità disponibili.\n- Risparmio con fatturazione annuale: scegliendo l’annuale paghi 10 mensilità anziché 12 (2 mesi gratis all’anno).\n\nSe desiderate un preventivo Enterprise o supporto per il passaggio a un piano superiore, è necessario contattarci per un preventivo personalizzato.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buonasera Laura, la scadenza del suo abbonamento è il 22 Luglio 2026 (mancano 12 giorni rispetto al 10 Luglio 2026). Il suo abbonamento risulta attivo. Per gestire il rinnovo o disdire l'abbonamento può andare in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buongiorno Paolo, confermiamo che il vostro abbonamento risulta Attivo. Lo stato “Attivo” significa che il pagamento è in regola e tutte le funzionalità del piano sono disponibili. La prossima data di rinnovo è il 11 novembre 2026. Puoi gestire il rinnovo o effettuare la disdetta da Impostazioni > Abbonamento: la disdetta avrà effetto alla scadenza del periodo in corso, evitando il rinnovo automatico.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Buongiorno, il piano Business costa 29€ per utente al mese. I prezzi indicati sono per utente al mese. Se scegli l'abbonamento annuale paghi 10 mensilità anziché 12 (2 mesi gratis).",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il tuo abbonamento è attivo e la prossima scadenza (rinnovo) è il 14/09/2026. Puoi gestire il rinnovo o disdire l'abbonamento in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso e impedirà il rinnovo automatico. Lo stato “Attivo” indica che il pagamento è in regola e tutte le funzionalità del piano sono disponibili.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il tuo account risulta nello stato “sospeso”. Secondo la documentazione: la data di rinnovo è passata e, se il pagamento non viene registrato entro una settimana, l’account viene sospeso e l’accesso alle funzionalità è bloccato fino alla regolarizzazione. Puoi gestire il rinnovo in Impostazioni > Abbonamento. Se il problema fosse la password, dalla pagina di login clicca su “Password dimenticata?”, inserisci l’email dell’account e segui il link che ricevi per impostare una nuova password (il link è valido per 24 ore).",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Dalle FAQ: il piano Pro consente fino a 10 utenti. Avete già 10 utenti, quindi non è possibile invitare altri membri finché non aumentate il limite del piano. Per invitare nuovi membri: vai in Impostazioni > Team > Inviti, inserisci l'email della persona e assegnale un ruolo; riceverà un'email con il link per unirsi. Lo stato dell'abbonamento è \"Periodo di tolleranza (Grace)\": la data di rinnovo è passata ma l'account resta pienamente utilizzabile per una settimana, quindi lo stato attuale non dovrebbe impedire gli inviti. Se serve aumentare il numero di utenti, vai in Impostazioni > Abbonamento > Cambia piano.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il piano Enterprise non ha limiti sul numero di utenti. Per aggiungere nuovi membri: vai in Impostazioni > Team > Inviti, inserisci l'email della persona da invitare e assegnale un ruolo. La persona riceverà un'email con il link per unirsi allo spazio di lavoro. Nota: solo i membri già presenti nello spazio di lavoro possono essere aggiunti a una board; per invitare nuove persone usa la sezione Team. Per eventuali informazioni sui costi o un preventivo personalizzato: il piano Enterprise è \"su richiesta\" (contattaci per un preventivo).",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Puoi verificare la data di scadenza e gestire il rinnovo in Impostazioni > Abbonamento. La disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico. Lo stato dell'abbonamento può essere: \"Attivo\" (pagamento in regola), \"Periodo di tolleranza\" (Grace) — la data di rinnovo è passata ma il pagamento non è ancora stato registrato; l'account resta pienamente utilizzabile per una settimana per regolarizzare il pagamento, o \"Sospeso\" — è trascorsa più di una settimana dalla scadenza senza pagamento e l'accesso è bloccato fino alla regolarizzazione. Gli account con piano Free non hanno scadenza e restano sempre attivi.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Per verificare la scadenza del tuo abbonamento, vai in Impostazioni > Abbonamento. Puoi gestire il rinnovo lì: la disdetta ha effetto alla scadenza del periodo in corso, senza rinnovo automatico. Lo stato dell'abbonamento può essere: \"Attivo\" (pagamento in regola), \"Periodo di tolleranza\" (la data di rinnovo è passata ma il pagamento non è ancora registrato; l'account resta pienamente utilizzabile per una settimana) e \"Sospeso\" (è trascorsa più di una settimana dalla scadenza senza che il pagamento sia stato registrato e l'accesso è bloccato). Gli account con piano Free non hanno scadenza.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Posso aiutarti esclusivamente con richieste riguardanti ACME Board, i suoi servizi e l'assistenza clienti.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "auto_reply",
+    "args": {
+      "message": "Il piano Business costa 29€ per utente al mese. I prezzi sono per utente al mese: Free 0€, Pro 12€, Business 29€, Enterprise su richiesta (contattaci per un preventivo personalizzato). Scegliendo l'abbonamento annuale invece di quello mensile paghi 10 mensilità anziché 12, quindi hai 2 mesi gratis all'anno. Per cambiare il piano: vai in Impostazioni > Abbonamento > Cambia piano e seleziona il nuovo piano. Il cambio ha effetto immediato sulle funzionalità disponibili.",
+      "department": "",
+      "summary": ""
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "action": "pending_reply",
+    "args": {
+      "message": "Grazie per la segnalazione. Per poter procedere con la modifica del referente dell'account abbiamo bisogno che ci forniate le seguenti informazioni:\n\n- Nome e cognome del nuovo referente\n- Email aziendale del nuovo referente\n- Numero di telefono e ruolo/titolo in azienda\n- Conferma che il nuovo referente è autorizzato a gestire l'account (ad es. autorizzazione del legale rappresentante)\n- Indicare se il referente precedente può confermare il cambio. Se non è disponibile, inviateci una comunicazione ufficiale su carta intestata o un'email dall'indirizzo aziendale che autorizzi il trasferimento\n\nInoltre, confermate che l'account è Marino Trasporti S.r.l. (client_id: 4a6e9d05). Dopo aver ricevuto questi elementi procederemo con la verifica e vi indicheremo i prossimi passi.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "pending_reply",
+    "args": {
+      "message": "Per poter investigare abbiamo bisogno di ulteriori informazioni. Per favore forniteci: 1) L’esatto messaggio di errore che appare (o uno screenshot). 2) Conferma se il problema riguarda tutti gli utenti o solo alcuni; in tal caso indicate gli indirizzi email degli utenti interessati. 3) Da quando si verifica il problema (data/ora approssimativa). 4) Avete già provato a reimpostare la password tramite “Password dimenticata?” (il link di reset è valido 24 ore). 5) Eventuali azioni recenti (modifiche di utenze, integrazioni o amministrazione) rilevanti. Con queste informazioni procederemo con la verifica.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "pending_reply",
+    "args": {
+      "message": "Grazie per la segnalazione. Per poter investigare abbiamo bisogno di informazioni aggiuntive: 1) browser e versione (es. Chrome 115) o app iOS/Android e versione; 2) dispositivo (PC/Mac/smartphone) e sistema operativo; 3) passi esatti che esegue e in quale punto la procedura si interrompe; 4) eventuali messaggi di errore o screenshot della schermata; 5) l'indirizzo email usato per la registrazione (se già inserito). Ha già provato a cancellare cache/cookies o usare la modalità in incognito/altro browser? Inviaci queste informazioni e procediamo con la verifica.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "pending_reply",
+    "args": {
+      "message": "Ciao Davide, grazie per la segnalazione. Per aiutarci a identificare e risolvere il problema abbiamo bisogno di qualche informazione in più: \n\n1) Accade con tutti i progetti o solo con uno in particolare? Se è uno specifico, indica il nome o l'ID del progetto. \n2) Quando è iniziato il problema e succede sempre quando apri il progetto o solo a volte? \n3) Usi l'app web, l'app desktop o l'app mobile? Indica browser e versione (es. Chrome 114) o versione dell'app. \n4) Su quale sistema operativo (Windows/Mac/Linux/iOS/Android) e versione? \n5) Succede anche ad altri membri del tuo team? Se sì, quanti utenti lo riscontrano? \n6) Il progetto contiene molti allegati o elementi pesanti (es. numerosi file, molte colonne, automazioni)? Quanti task approssimativamente? \n7) Puoi inviarci uno screenshot o una registrazione dello schermo quando si blocca, e indicare eventuali messaggi di errore? \n\nPer favore prova intanto questi passaggi e comunicaci il risultato:  \n- Ricaricare la pagina/riavviare l'app;  \n- Aprire il progetto in una finestra di navigazione in incognito o in un altro browser;  \n- Cancellare la cache del browser;  \n- Verificare la connessione internet e provare da un altro dispositivo se possibile.  \n\nInviaci le risposte e gli eventuali file richiesti. Con queste informazioni potremo procedere con ulteriori verifiche o coinvolgere il team tecnico se necessario.",
+      "department": "",
+      "summary": ""
+    }
+  },
+  {
+    "action": "pending_reply",
+    "args": {
+      "message": "Grazie per la segnalazione. Per procedere con l'aggiornamento del referente dell'account abbiamo bisogno che ci confermiate quanto segue:\n\n1) Conferma che la richiesta è autorizzata dall'attuale referente o da un amministratore dell'account.\n2) Specificare se il cambio riguarda: referente principale dell'account, contatto per la fatturazione e/o amministratore dell'account.\n3) Dati completi del nuovo referente (se non già forniti): nome completo, email (attualmente indicata: a.marino@marinotrasporti.it), numero di telefono e ruolo in azienda.\n4) Una prova di autorizzazione (ad es. email dall'attuale referente/amministratore o una breve dichiarazione su carta intestata firmata).\n\nAppena riceviamo queste informazioni procederemo con la verifica e vi comunicheremo l'esito.",
+      "department": "",
+      "summary": ""
+    }
+  }
+]

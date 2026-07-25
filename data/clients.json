@@ -1,0 +1,224 @@
+{
+  "clients": [
+    {
+      "client_id": "a3f5c81b",
+      "azienda": "Rossi Costruzioni S.r.l.",
+      "referente": "Marco Rossi",
+      "email": "marco.rossi@rossicostruzioni.it",
+      "piano": "Business",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-11-30",
+      "utenti_attuali": 23,
+      "progetti_attuali": 41
+    },
+    {
+      "client_id": "7d2e94a0",
+      "azienda": "Bianchi Digital Studio",
+      "referente": "Laura Bianchi",
+      "email": "laura@bianchidigital.com",
+      "piano": "Pro",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-07-22",
+      "utenti_attuali": 6,
+      "progetti_attuali": 12
+    },
+    {
+      "client_id": "b1c6f307",
+      "azienda": "Verdi Logistica S.p.A.",
+      "referente": "Giuseppe Verdi",
+      "email": "g.verdi@verdilogistica.it",
+      "piano": "Enterprise",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2027-02-15",
+      "utenti_attuali": 140,
+      "progetti_attuali": 260
+    },
+    {
+      "client_id": "e58a0d4f",
+      "azienda": "Neri Consulting",
+      "referente": "Anna Neri",
+      "email": "anna.neri@nericonsulting.eu",
+      "piano": "Pro",
+      "stato_abbonamento": "grace_period",
+      "scadenza_rinnovo": "2026-07-05",
+      "utenti_attuali": 10,
+      "progetti_attuali": 15
+    },
+    {
+      "client_id": "6f0b27e9",
+      "azienda": "Gialli Retail Group",
+      "referente": "Franco Gialli",
+      "email": "f.gialli@gialliretail.com",
+      "piano": "Business",
+      "stato_abbonamento": "sospeso",
+      "scadenza_rinnovo": "2026-06-30",
+      "utenti_attuali": 31,
+      "progetti_attuali": 58
+    },
+    {
+      "client_id": "c9a41e2d",
+      "azienda": "Ferrari Automazioni S.r.l.",
+      "referente": "Elena Ferrari",
+      "email": "e.ferrari@ferrariautomazioni.it",
+      "piano": "Business",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-09-14",
+      "utenti_attuali": 18,
+      "progetti_attuali": 34
+    },
+    {
+      "client_id": "2b8d70f6",
+      "azienda": "Conti & Partners",
+      "referente": "Davide Conti",
+      "email": "davide.conti@contipartners.it",
+      "piano": "Pro",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-10-03",
+      "utenti_attuali": 4,
+      "progetti_attuali": 9
+    },
+    {
+      "client_id": "5e13ba9c",
+      "azienda": "Moretti Editoria",
+      "referente": "Sara Moretti",
+      "email": "s.moretti@morettieditoria.com",
+      "piano": "Free",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": null,
+      "utenti_attuali": 1,
+      "progetti_attuali": 2
+    },
+    {
+      "client_id": "d0472f8a",
+      "azienda": "Galli Impianti S.p.A.",
+      "referente": "Roberto Galli",
+      "email": "r.galli@galliimpianti.it",
+      "piano": "Enterprise",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2027-01-20",
+      "utenti_attuali": 87,
+      "progetti_attuali": 178
+    },
+    {
+      "client_id": "8fc25a13",
+      "azienda": "Ricci Marketing",
+      "referente": "Chiara Ricci",
+      "email": "chiara@riccimarketing.it",
+      "piano": "Pro",
+      "stato_abbonamento": "grace_period",
+      "scadenza_rinnovo": "2026-07-08",
+      "utenti_attuali": 7,
+      "progetti_attuali": 18
+    },
+    {
+      "client_id": "4a6e9d05",
+      "azienda": "Marino Trasporti S.r.l.",
+      "referente": "Antonio Marino",
+      "email": "a.marino@marinotrasporti.it",
+      "piano": "Business",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-12-05",
+      "utenti_attuali": 42,
+      "progetti_attuali": 73
+    },
+    {
+      "client_id": "7c3f1b48",
+      "azienda": "Costa Software House",
+      "referente": "Valentina Costa",
+      "email": "v.costa@costasoftware.dev",
+      "piano": "Pro",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-08-28",
+      "utenti_attuali": 9,
+      "progetti_attuali": 16
+    },
+    {
+      "client_id": "e2905c7f",
+      "azienda": "Fontana Studio Legale",
+      "referente": "Luca Fontana",
+      "email": "l.fontana@fontanalegale.it",
+      "piano": "Pro",
+      "stato_abbonamento": "sospeso",
+      "scadenza_rinnovo": "2026-05-19",
+      "utenti_attuali": 5,
+      "progetti_attuali": 11
+    },
+    {
+      "client_id": "10bd6e93",
+      "azienda": "Serra Agrifood S.p.A.",
+      "referente": "Paolo Serra",
+      "email": "p.serra@serraagrifood.it",
+      "piano": "Enterprise",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-11-11",
+      "utenti_attuali": 112,
+      "progetti_attuali": 195
+    },
+    {
+      "client_id": "9f47a802",
+      "azienda": "Longo Design",
+      "referente": "Martina Longo",
+      "email": "martina@longodesign.it",
+      "piano": "Free",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": null,
+      "utenti_attuali": 1,
+      "progetti_attuali": 3
+    },
+    {
+      "client_id": "3d81c5eb",
+      "azienda": "Barbieri Manifattura S.r.l.",
+      "referente": "Stefano Barbieri",
+      "email": "s.barbieri@barbierimanifattura.it",
+      "piano": "Business",
+      "stato_abbonamento": "grace_period",
+      "scadenza_rinnovo": "2026-07-03",
+      "utenti_attuali": 27,
+      "progetti_attuali": 49
+    },
+    {
+      "client_id": "6a0e2f4d",
+      "azienda": "Greco Energia S.p.A.",
+      "referente": "Federica Greco",
+      "email": "f.greco@grecoenergia.it",
+      "piano": "Enterprise",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2027-03-08",
+      "utenti_attuali": 205,
+      "progetti_attuali": 312
+    },
+    {
+      "client_id": "b7f3901a",
+      "azienda": "Villa Turismo S.r.l.",
+      "referente": "Andrea Villa",
+      "email": "a.villa@villaturismo.it",
+      "piano": "Pro",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-09-30",
+      "utenti_attuali": 8,
+      "progetti_attuali": 14
+    },
+    {
+      "client_id": "0c58e46b",
+      "azienda": "Pellegrini Salute S.r.l.",
+      "referente": "Giulia Pellegrini",
+      "email": "g.pellegrini@pellegrinisalute.it",
+      "piano": "Business",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": "2026-10-22",
+      "utenti_attuali": 36,
+      "progetti_attuali": 64
+    },
+    {
+      "client_id": "e94a17c3",
+      "azienda": "Sanna Formazione",
+      "referente": "Marco Sanna",
+      "email": "m.sanna@sannaformazione.it",
+      "piano": "Free",
+      "stato_abbonamento": "attivo",
+      "scadenza_rinnovo": null,
+      "utenti_attuali": 1,
+      "progetti_attuali": 1
+    }
+  ]
+}
